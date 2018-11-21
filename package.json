@@ -3,10 +3,12 @@
   "scripts": {
     "start": "electron .",
     "bundle": "webpack",
-    "upload-source-maps": "sentry-cli releases files v1 upload-sourcemaps --rewrite --url-prefix '~/build' ./build"
+    "upload-source-maps": "sentry-cli releases files v3 upload-sourcemaps --rewrite --url-prefix '~/build' ./build"
   },
   "dependencies": {
-    "electron": "^3.0.10"
+    "electron": "^3.0.10",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
     "@sentry/cli": "^1.36.4",
